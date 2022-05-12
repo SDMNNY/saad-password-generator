@@ -10,7 +10,7 @@ function writePassword() {
 
   passwordText.value = password;
 
-}
+};
 
 funtion generatePassword () {
   var passwordLength = Math.floor (
@@ -36,6 +36,37 @@ if (!NaN(passwordLength) && passwordLength >= 8 && passwordLength <=128) {
       generatePassword ();
     }
   } else {
-    var finalPassword = [""]
+    var finalPassword = [""];
+    var finalPasswordPool = "";
+    var specialPool = "“‘!#$%&*+,-./:;<=>?@()[]^_`{|}~“";
+    var numbersPool = "1234567890";
+    var upperCasePool = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var lowerCasePool = "abcdefghijklmnopqrstuvwxyz";
+    if (specialChar) {
+      finalPasswordPool += specialPool;
+    }
+    if (numericalChar) {
+      finalPasswordPool += upperCasePool;
+    }
+    if (lowerChar) {
+      finalPasswordPool += lowerCasePool;
+    }
+    var finalPasswordPool = finalPasswordPool.split("");
+    for (var i = 0; i < passwordLength; i++){
+      finalPassword = finalPassword.concat(
+        finalPasswordPool [
+          Math.floor(Math.random() * finalPasswordPool.length)
+        ]
+      );
+    }
+    return finalPassword.join("");
+    }
+  } else {
+    alert("Please choose a valid number between 8 and 128.");
+    var wantToContinue = confirm("Do you still want to generate?");
+    if (wantToContinue){
+      generatePassword();
+    
+    }
   }
-
+}
