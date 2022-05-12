@@ -12,8 +12,8 @@ function writePassword() {
 
 };
 
-funtion generatePassword () {
-  var passwordLength = Math.floor (
+function generatePassword () {
+  var passwordLength = Math.floor(
     prompt (
       "How long do you want the password to be? Choose a password between 8 to 128 characters"
 
@@ -30,7 +30,7 @@ if (!NaN(passwordLength) && passwordLength >= 8 && passwordLength <=128) {
     !upperChar &&
     !lowerChar
   ) {
-    alert ("Choose at least one options!");
+    alert("Choose at least one options!");
     var wantToContinue = confirm("Do you still want to generate a password?");
     if (wantToContinue) {
       generatePassword ();
