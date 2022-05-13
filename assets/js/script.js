@@ -10,7 +10,7 @@ function writePassword() {
 
   passwordText.value = password;
 
-};
+}
 
 function generatePassword () {
   var passwordLength = Math.floor(
@@ -70,3 +70,4 @@ if (!NaN(passwordLength) && passwordLength >= 8 && passwordLength <=128) {
     }
   }
 }
+
