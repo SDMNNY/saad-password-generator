@@ -1,13 +1,9 @@
 # saad-password-generator
+
+## Description
 Welcome to my Password Generator! 
 My first attempt to create a password generator, which shuffles between lowercase, uppercase, numericals, and special characters to give you an awesome password!
 
-
-# Passworfd
-
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
-## Description
 
 
 ## Table of Contents
@@ -18,17 +14,14 @@ My first attempt to create a password generator, which shuffles between lowercas
 4. [Questions](#questions)
 5. [License](#license)
 
-## Installation
+## Installation & Usage 
+When prompted please enter a number between 8 to 128
+
+Next, you will be prompted with few more questions which will ask if you would like to include lowercase, capitalcase, numbers, and special characters. 
 
 
-
-## Usage
-
-
-
-### Please see the gif below
-
-![Gif of me demonstrating how to use this program on terminal](assets/readme.gif )
+## Mock
+![Gif of me demonstrating how to use this program on terminal](assets/img/Password%20Generator.gif )
 
 
 ## Tests
@@ -41,8 +34,6 @@ If you have any questions, please feel free to reach out to me via:
 1. Email: sdmnny@gmail.com
 2. GitHub: SDMNNY
 
+
 ## License
-
-## Credits
-
 Copyright © SDMNNY All rights reserved.
