@@ -19,6 +19,9 @@ When prompted please enter a number between 8 to 128
 
 Next, you will be prompted with few more questions which will ask if you would like to include lowercase, capitalcase, numbers, and special characters. 
 
+## Link
+
+Please [Click](https://sdmnny.github.io/saad-password-generator/) to activate the web application.
 
 ## Mock
 ![Gif of me demonstrating how to use this program on terminal](assets/img/Password%20Generator.gif )
